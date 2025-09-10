@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -62,15 +62,37 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       text-align: center;
       color: #fff;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* overlay */
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero img {
+      height: 80px;
+      margin-bottom: 20px;
     }
 
     .hero h1 {
       font-size: 3rem;
       background: rgba(0, 0, 0, 0.6);
-      padding: 20px;
+      padding: 15px 25px;
       border-radius: 12px;
+      display: inline-block;
     }
 
     /* About Section (Fullscreen Video) */
@@ -191,6 +213,29 @@
       margin: 8px 0;
     }
 
+    .contact .buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .contact a.button {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      background: #d4af37;
+      color: #000;
+      transition: background 0.3s;
+    }
+
+    .contact a.button:hover {
+      background: #b9962d;
+    }
+
     footer {
       padding: 20px;
       text-align: center;
@@ -216,7 +261,10 @@
 
   <!-- Hero -->
   <section class="hero" id="hero">
-    <h1>Dusken Bloom - The Luxury Perfumes</h1>
+    <div class="hero-content">
+      <img src="assets/logo.png" alt="Dusken Bloom Logo" />
+      <h1>Dusken Bloom - The Luxury Perfumes</h1>
+    </div>
   </section>
 
   <!-- About -->
@@ -265,7 +313,10 @@
     <h2>Contact Us</h2>
     <p>Email: duskenbloom@gmail.com</p>
     <p>Phone: +91 8762773728</p>
-    <p>Instagram: <a href="https://instagram.com/dusken_bloom" target="_blank" style="color:#d4af37;">@dusken_bloom</a></p>
+    <div class="buttons">
+      <a href="https://wa.me/918762773728" target="_blank" class="button">💬 Chat on WhatsApp</a>
+      <a href="https://instagram.com/dusken_bloom" target="_blank" class="button">📷 Instagram</a>
+    </div>
   </section>
 
   <footer>
