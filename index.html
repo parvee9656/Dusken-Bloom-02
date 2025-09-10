@@ -76,7 +76,13 @@
     /* About */
     .about{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
     .about-card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
-    .about-media{border-radius:var(--radius);overflow:hidden}
+    .about-media video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+
 
     /* Products */
     .products{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
