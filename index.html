@@ -130,18 +130,19 @@
     /* Products */
     .products {
       padding: 80px 20px;
-      text-align: center;
       background: #111;
+      text-align: center;
     }
 
     .products h2 {
       margin-bottom: 40px;
       font-size: 2.5rem;
+      color: #d4af37;
     }
 
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 40px;
       max-width: 1000px;
       margin: auto;
@@ -149,23 +150,40 @@
 
     .product-card {
       background: #1a1a1a;
-      padding: 20px;
-      border-radius: 12px;
+      padding: 25px;
+      border-radius: 16px;
       transition: transform 0.3s;
+      text-align: left;
     }
 
     .product-card:hover {
       transform: scale(1.05);
     }
 
+    .product-card h3 {
+      margin: 15px 0;
+      font-size: 1.5rem;
+      color: #d4af37;
+    }
+
     .product-card img {
       width: 100%;
       border-radius: 12px;
+      margin-bottom: 15px;
     }
 
-    .product-card h3 {
+    .notes {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
       margin: 15px 0;
-      font-size: 1.3rem;
+    }
+
+    .note {
+      background: #2a2a2a;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.9rem;
     }
 
     /* Gallery */
@@ -177,6 +195,7 @@
     .gallery h2 {
       margin-bottom: 40px;
       font-size: 2.5rem;
+      color: #d4af37;
     }
 
     .gallery-grid {
@@ -200,13 +219,14 @@
     /* Contact */
     .contact {
       padding: 80px 20px;
-      text-align: center;
       background: #111;
+      text-align: center;
     }
 
     .contact h2 {
       margin-bottom: 20px;
       font-size: 2.5rem;
+      color: #d4af37;
     }
 
     .contact p {
@@ -252,7 +272,7 @@
       <ul>
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#products">Products</a></li>
+        <li><a href="#products">Fragrances</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -281,17 +301,38 @@
 
   <!-- Products -->
   <section class="products" id="products">
-    <h2>Our Products</h2>
+    <h2>Our Fragrances</h2>
     <div class="product-grid">
       <div class="product-card">
         <img src="assets/icon-main.jpg" alt="Icon Perfume" />
-        <h3>ICON</h3>
-        <p>A fragrance that defines class and elegance.</p>
+        <h3>ICON – Evoke The Extraordinary</h3>
+        <p>Experience unmatched confidence and charm with ICON, a bold and luxurious perfume designed for those who lead, inspire, and leave a lasting impression.</p>
+        <div class="notes">
+          <span class="note">Top: Lavender, Cardamom, Artemisia, Bergamot</span>
+          <span class="note">Middle: Tobacco, Cinnamon, Cedar, Iris</span>
+          <span class="note">Base: Musk, Vanilla, Sandalwood, Amber</span>
+        </div>
+        <ul>
+          <li>8+ hours long-lasting performance</li>
+          <li>Perfect for evenings, occasions, or daily confidence</li>
+          <li>30ml transparent bottle • sleek black cap</li>
+        </ul>
       </div>
+
       <div class="product-card">
         <img src="assets/dark-orchid-main.png" alt="Dark Orchid Perfume" />
-        <h3>Dark Orchid</h3>
-        <p>A bold scent with depth and mystery.</p>
+        <h3>Dark Orchid – Whisper of Mystery</h3>
+        <p>Step into a world of elegance and allure with Dark Orchid, crafted for those who appreciate timeless sophistication.</p>
+        <div class="notes">
+          <span class="note">Top: Bergamot, Fresh, Citrus</span>
+          <span class="note">Mid: Green Floral, Rose, Melon Fruit</span>
+          <span class="note">Base: Amber, Musk, Sandalwood</span>
+        </div>
+        <ul>
+          <li>Long-lasting fragrance – 8+ hours</li>
+          <li>Unisex • perfect for day & night</li>
+          <li>30ml transparent bottle • sleek black cap</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -311,16 +352,17 @@
   <!-- Contact -->
   <section class="contact" id="contact">
     <h2>Contact Us</h2>
-    <p>Email: duskenbloom@gmail.com</p>
-    <p>Phone: +91 8762773728</p>
+    <p>Have a question or want to place an order? Reach us on WhatsApp or follow us on Instagram for updates.</p>
     <div class="buttons">
       <a href="https://wa.me/918762773728" target="_blank" class="button">💬 Chat on WhatsApp</a>
       <a href="https://instagram.com/dusken_bloom" target="_blank" class="button">📷 Instagram</a>
     </div>
+    <p>WhatsApp: 8762773728</p>
+    <p>Instagram: @dusken_bloom</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Dusken Bloom - The Luxury Perfumes. All rights reserved.</p>
+    <p>&copy; 2025 Dusken Bloom – The Luxury Perfumes. All rights reserved.</p>
   </footer>
 </body>
 </html>
